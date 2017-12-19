@@ -19,15 +19,13 @@ The structure of the data should support the operation of adding a string to the
 
 Use quadric probing to resolve collisions, i-th sample
 
-g(k,i)=g(k,i−1)+i(modm)
-
-, m - power of 2. 
+g(k,i)=g(k,i−1)+i(mod m), m - power of 2. 
 
 Each line of the input data sets one operation over the set. The record of the operation consists of the type of operation, a space, and a string, which is a subject for this operation.
 
 Type of operation - one of the following three symbols:
-   + means adding this string to the set;
-   - means deleting this string from the set;  
+   \+ means adding this string to the set;
+   \- means deleting this string from the set;  
    ? means membership testing of this string to the set.
 
 When adding an element to the set IT IS NOT GUARANTEED that this element is not already present in the set. When deleting an element from the set IT IS NOT GUARANTEED that this element is present in this set. 
@@ -35,11 +33,11 @@ When adding an element to the set IT IS NOT GUARANTEED that this element is not 
 For each of the operations the program should display one of the two lines OK or FAIL, depending on whether this word is found in our set.
 
 ##### Sample Input:  
-+ hello  
-+ bye  
+\+ hello  
+\+ bye  
 ? bye  
-+ bye  
-- bye  
+\+ bye  
+\- bye  
 ? bye  
 ? hello 
 ##### Sample Output:  
